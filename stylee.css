@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.calculator {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    background-color: #f0f0f0; /* Lighter background color */
+    border-radius: 10px; /* Rounded corners for the calculator */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+.age-results {
+    margin-top: 20px;
+}
+
+.age-result {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background color for results */
+    border-radius: 5px; /* Rounded corners for results */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 3D shadow effect for results */
+}
+
+.age-result h2 {
+    font-size: 20px;
+}
+
+.age-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 3D button styling with animation */
+.calculate-button {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite; /* Button animation */
+}
+
+.calculate-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Animation keyframes for the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation and depth effect for the label */
+.animated-label {
+    font-size: 18px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    transform-origin: left center;
+}
+
+.animated-label:hover {
+    transform: translateX(5px) translateY(-5px) scale(1.1) skew(-10deg, 0); /* Add skew for depth */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a 3D text shadow */
+}

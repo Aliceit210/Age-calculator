@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 id="calculator-title" class="animated-title">Age Calculator</h1>
+        <label class="animated-label" for="birthdate">Enter your birthdate:</label>
+        <input type="date" id="birthdate" required>
+        <br><br>
+        <button class="calculate-button" onclick="calculateAge()">Calculate Age</button>
+        <div id="results" class="age-results">
+            <!-- Result containers will be dynamically added here using JavaScript -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
